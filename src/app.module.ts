@@ -7,6 +7,7 @@ import { ExerciseModule } from './exercise/exercise.module';
 import { Exercise } from './exercise/entities/exercise.entity';
 import { WorkoutSetModule } from './workout_set/workout_set.module';
 import { WorkoutSet } from './workout_set/entities/workout_set.entity';
+import { WorkoutModule } from './workout/workout.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { WorkoutSet } from './workout_set/entities/workout_set.entity';
     }),
     ExerciseModule,
     WorkoutSetModule,
+    WorkoutModule,
   ],
   controllers: [AppController],
   providers: [AppService],

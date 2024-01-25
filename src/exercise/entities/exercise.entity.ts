@@ -33,6 +33,6 @@ export class Exercise {
   @Column('text', { array: true })
   tips: string[];
 
-  @OneToMany((type) => WorkoutSet, (set) => set.id)
+  @OneToMany(() => WorkoutSet, (set) => set.id)
   sets: WorkoutSet[];
 }
